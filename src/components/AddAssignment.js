@@ -65,22 +65,22 @@ class AddAssignment extends React.Component {
 
                 <br /><br />
 
-                <TextField style={{ width: 200 }} label="Assignment Name" name="assignmentName"
+                <TextField style={{ width: 200 }} label="Assignment Name" name="assignmentName" id="assignmentName"
                     onChange={this.handleChange} value={this.state.assignmentName} />
 
                 <br /><br />
 
-                <TextField style={{ width: 200 }} label="Due Date" name="dueDate"
+                <TextField style={{ width: 200 }} label="Due Date" name="dueDate" id="dueDate"
                     onChange={this.handleChange} value={this.state.dueDate} InputProps={{ inputProps: {} }} />
 
                 <br /><br />
 
-                <TextField style={{ width: 200 }} label="Course Id" name="courseId"
+                <TextField style={{ width: 200 }} label="Course Id" name="courseId" id="courseId"
                     onChange={this.handleChange} value={this.state.courseId} />
 
                 <br /><br />
 
-                <Button variant="outlined" color="primary" style={{ margin: 10 }}
+                <Button id="Submit" variant="outlined" color="primary" style={{ margin: 10 }}
                     onClick={this.handleSubmit} >Submit</Button>
                 <ToastContainer autoClose={1500} />
             </div>
